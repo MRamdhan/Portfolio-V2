@@ -400,11 +400,10 @@ nav ul li a {
 .skills-right ul {
   line-height: 2rem;
   padding: 0 1rem;
-}
-.skills-container ul {
+}.skills-container ul {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 2 kolom */
-  grid-template-rows: repeat(2, auto);  /* 4 baris */
+  grid-template-columns: repeat(5, 1fr); /* Default: 5 kolom */
+  grid-template-rows: repeat(2, auto);  /* Default: 2 baris */
   gap: 1.5rem; /* Jarak antar item */
   list-style: none;
   padding: 0;
@@ -433,6 +432,32 @@ nav ul li a {
   font-weight: 600; /* Teks tebal */
   color: #333; /* Warna teks */
 }
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .skills-container ul {
+    grid-template-columns: repeat(4, 1fr); /* 4 kolom pada layar sedang */
+  }
+}
+
+@media (max-width: 992px) {
+  .skills-container ul {
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom pada layar sedang */
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-container ul {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom pada tablet */
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-container ul {
+    grid-template-columns: 1fr; /* 1 kolom pada smartphone */
+  }
+}
+
 
 
 /* Contact Section */
