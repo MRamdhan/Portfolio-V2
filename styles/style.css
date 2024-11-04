@@ -356,20 +356,21 @@ nav ul li a:hover::after {
   display: flex;
   gap: 1rem;
   margin: 1rem 0;
+  color: var(--primaryIconColor);
 }
 
 .portfolio-tags div {
   font-size: 0.9rem;
   border: 1px solid var(--borderColor);
   padding: 0.4rem 1rem;
-  color: var(--secondaryTextColor);
+  color: var(--primaryIconColor);
 }
 
 .portfolio-tags div {
   font-size: 0.9rem;
   border: 1px solid var(--borderColor);
   padding: 0.4rem 1rem;
-  color: var(--secondaryTextColor);
+  color: var(--primaryIconColor);
 }
 
 
@@ -490,6 +491,7 @@ nav ul li a:hover::after {
 }
 
 .contact {
+  margin-top:5%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 3rem;
