@@ -198,7 +198,6 @@ nav ul li a:hover::after {
   top: 33px;
   right: 35px;
 }
-
 .clickMe {
   background-color: var(--primaryTextColor);
   color: white;
@@ -215,12 +214,12 @@ nav ul li a:hover::after {
 .clickMe::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 0; 
   top: 0;
-  width: 2px; /* Thickness of the vertical line */
-  height: 0;
+  width: 2px; 
+  height: 100%; 
   background-color: white;
-  transition: height 0.4s ease;
+  transition: left 0.4s ease; 
 }
 
 .clickMe:hover {
@@ -229,9 +228,8 @@ nav ul li a:hover::after {
 }
 
 .clickMe:hover::after {
-  height: 100%; /* Full height when hovered */
+  left: 100%;
 }
-
 
 #hero {
   height: 720px;
