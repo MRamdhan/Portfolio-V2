@@ -14,7 +14,6 @@
 }
 
 @media screen and (max-width: 825px) {
-  /* Burger */
   .burger {
     display: block;
     cursor: pointer;
@@ -32,7 +31,6 @@
     transform: rotate(45deg) translate(-5px, -7px);
   }
 
-  /* Navigation */
   nav {
     position: fixed;
     width: 50%;
@@ -57,13 +55,11 @@
   .nav-active {
     transform: translateX(0);
   }
-  /* End of Navigation */
 
   :root {
     --sectionPadding: 4rem 0;
   }
 
-  /* Titles */
   .section-title {
     font-size: 1.6rem;
     margin: 0.6rem 0 2.5rem;
@@ -73,7 +69,6 @@
     font-size: 0.8rem;
   }
 
-  /* Hero Section */
   #hero {
     grid-template-columns: 1fr;
     height: fit-content;
@@ -101,7 +96,6 @@
     margin-bottom: 0.5rem;
   }
 
-  /* Skills Section */
   .skills-grid {
     gap: 1rem;
   }
@@ -112,9 +106,7 @@
   }
 }
 
-/* Mobile Size */
 @media screen and (max-width: 640px) {
-  /* Titles */
   .section-title {
     font-size: 1.3rem;
   }
