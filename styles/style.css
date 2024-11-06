@@ -382,6 +382,62 @@ nav ul li a:hover::after {
   gap: 3rem;
 }
 
+.skills-container ul li:hover {
+  transform: scale(1.05);
+}
+
+/* Efek gradasi gelap pada hover */
+.skills-container ul li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+/* Menampilkan gradasi saat hover */
+.skills-container ul li:hover::before {
+  opacity: 1;
+}
+
+.icon {
+  position: relative;
+  z-index: 1; /* Agar ikon di atas gradasi */
+}
+
+.skill-name {
+  position: relative;
+  z-index: 1; /* Agar nama skill di atas gradasi */
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Gaya untuk overlay tingkat keterampilan */
+.skill-level {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 1; /* Agar di atas gradasi */
+}
+
+/* Tampilkan overlay saat dihover */
+.skills-container ul li:hover .skill-level {
+  opacity: 1;
+}
+
 .education {
   display: flex;
   gap: 1rem;
