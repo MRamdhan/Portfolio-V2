@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 :root {
   --primaryTextColor: #232e35;
   --secondaryTextColor: #656d72;
@@ -26,7 +25,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -168,7 +167,7 @@ nav ul li a::after {
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: var(--primaryIconColor);
+  background-color: var(--primaryTextColor);
   transition: width 0.4s ease;
 }
 
@@ -179,8 +178,6 @@ nav ul li a:hover {
 nav ul li a:hover::after {
   width: 100%;
 }
-
-
 
 .burger div {
   width: 25px;
@@ -201,7 +198,7 @@ nav ul li a:hover::after {
 .clickMe {
   background-color: var(--primaryTextColor);
   color: white;
-  padding: 0.75rem 1.25rem;
+  padding: 12px 20px;
   font-size: 0.875rem;
   font-weight: 600;
   border-radius: 0.375rem;
@@ -505,7 +502,7 @@ nav ul li a:hover::after {
 .contact-form textarea {
   width: 100%;
   padding: 0.75rem 1.3rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
   background: var(--secondaryBackgroundColor);
   border: 1px solid var(--borderColor);
   border-radius: 3px;
@@ -525,7 +522,7 @@ nav ul li a:hover::after {
 
 .btn-submit {
   width: 100%;
-  padding: 0.75rem 1.3rem;
+  padding: 10px 1px;
   background-color: var(--primaryIconColor);
   color: #fff;
   border: none;
@@ -534,8 +531,24 @@ nav ul li a:hover::after {
   transition: 0.2s ease-in-out;
 }
 
+.btn-submit::after {
+  content: "";
+  position: absolute;
+  left: 0; 
+  top: 0;
+  width: 2px; 
+  height: 100%; 
+  background-color: white;
+  transition: left 0.4s ease; 
+}
+
 .btn-submit:hover {
-  background-color: var(--primaryIconColorHover);
+  background-color: var(--primaryTextColor);
+  transform: scale(1.05);
+}
+
+.btn-submit:hover::after {
+  left: 100%;
 }
 
 .contact-item {
