@@ -388,7 +388,6 @@ nav ul li a:hover::after {
   transform: scale(1.05);
 }
 
-/* Efek gradasi gelap pada hover */
 .skills-container ul li::before {
   content: '';
   position: absolute;
@@ -402,24 +401,22 @@ nav ul li a:hover::after {
   border-radius: 10px;
 }
 
-/* Menampilkan gradasi saat hover */
 .skills-container ul li:hover::before {
   opacity: 1;
 }
 
 .icon {
   position: relative;
-  z-index: 1; /* Agar ikon di atas gradasi */
+  z-index: 1;
 }
 
 .skill-name {
   position: relative;
-  z-index: 1; /* Agar nama skill di atas gradasi */
+  z-index: 1;
   font-weight: bold;
   color: #fff;
 }
 
-/* Gaya untuk overlay tingkat keterampilan */
 .skill-level {
   position: absolute;
   top: 50%;
@@ -432,10 +429,9 @@ nav ul li a:hover::after {
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
-  z-index: 1; /* Agar di atas gradasi */
+  z-index: 1;
 }
 
-/* Tampilkan overlay saat dihover */
 .skills-container ul li:hover .skill-level {
   opacity: 1;
 }
@@ -516,7 +512,6 @@ nav ul li a:hover::after {
   color: #333;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1200px) {
   .skills-container ul {
     grid-template-columns: repeat(4, 1fr); 
@@ -602,7 +597,6 @@ nav ul li a:hover::after {
 
 .btn-submit:hover {
   background-color: var(--primaryTextColor);
-  transform: scale(1.05);
 }
 
 .btn-submit:hover::after {
