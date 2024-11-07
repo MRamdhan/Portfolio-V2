@@ -117,15 +117,15 @@ a {
   gap: 3rem;
 }
 
-
 .nav {
   width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
+  position: relative;
   background-color: white;
-  z-index: 1000;
+  z-index: 10;
 }
 
 nav ul {
@@ -195,6 +195,7 @@ nav ul li a:hover::after {
   top: 33px;
   right: 35px;
 }
+
 .clickMe {
   background-color: var(--primaryTextColor);
   color: white;
@@ -203,9 +204,10 @@ nav ul li a:hover::after {
   font-weight: 600;
   border-radius: 0.375rem;
   box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.5), 0 4px 6px -2px rgba(99, 102, 241, 0.5);
-  position: relative;
   overflow: hidden;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+  position: relative;
 }
 
 .clickMe::after {
