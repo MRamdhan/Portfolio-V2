@@ -39,11 +39,11 @@
                 <div class="hero-left">
                     <h2 class="pre-title">Hello Everyone <span><img src="./asset/Hi.gif" alt="Hi" style="width: 30px;" /></span></h2>
                     <h1 class="hero-name">RAMDHAN <span>IRAWAN</span></h1>
-                    <p>
-                        Fresh graduate as Back-End Web Developer, Proficient in Javascript and Vue. Experienced about UI/UX.
-                    </p>
+                    <h2 class="typing-text">
+                        <span id="typing"></span><span class="cursor">|</span>
+                    </h2>
                     <div style="margin-top:20px;">
-                        <a href="/Portfolio-V2/MRamdhan.pdf" target="_blank" class="clickMe">
+                        <a href="/Portfolio-V2/CVMRamdhan.pdf" target="_blank" class="clickMe">
                             Open CV
                         </a>
                     </div>
@@ -95,7 +95,7 @@
 
     <!-- project -->
     <section id="project">
-        <div class="portfolios main-container ">
+        <div class="portfolios main-container">
             <h1 class="section-title">My Project</h1>
             <div class="grid-3 ">
                 <!-- Portfolio 1 -->
@@ -290,7 +290,7 @@
                 </div>
                 <div class="portfolio " data-aos="fade-left" data-aos-duration="3050">
                     <div class="portfolio-cover ">
-                        <img src="./asset/portfolios/portofolio-11.jpg " alt="Portfolio 1 " />
+                        <img src="./asset/portfolios/XYZ.png" alt="Portfolio 1 " />
                     </div>
                     <div class="portfolio-info ">
                         <div class="portfolio-title ">
@@ -310,7 +310,48 @@
                         </p>
                     </div>
                 </div>
-
+                <div class="portfolio " data-aos="fade-up" data-aos-duration="3050">
+                    <div class="portfolio-cover ">
+                        <img src="./asset/portfolios/badminton.png" alt="Portfolio 1 " />
+                    </div>
+                    <div class="portfolio-info ">
+                        <div class="portfolio-title ">
+                            <h4><b>Badminton Court</b></h4>
+                            <a href="https://github.com/MRamdhan/Reservasi_Badminton" class="portfolio-link ">
+                                <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 24 24 ">
+                                <path d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z "/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="portfolio-tags ">
+                            <div>Python</div>
+                            <div>HTML</div>
+                        </div>
+                        <p>
+                            This badminton court reservation system allows users to book courts in real-time, view availability, and manage their reservations.
+                        </p>
+                    </div>
+                </div>
+                <div class="portfolio " data-aos="fade-up" data-aos-duration="3050">
+                    <div class="portfolio-cover ">
+                        <img src="./asset/portfolios/stunting.png" alt="Portfolio 1 " />
+                    </div>
+                    <div class="portfolio-info ">
+                        <div class="portfolio-title ">
+                            <h4><b>Cegah Stunting</b></h4>
+                            <a href="https://cegahstunting-seven.vercel.app/" class="portfolio-link ">
+                                <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 24 24 ">
+                                <path d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z "/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="portfolio-tags ">
+                            <div>Python</div>
+                        </div>
+                        <p>
+                            Cegah Stunting is a web application that helps check a child’s growth using age, gender, weight, and height. It uses WHO growth standards and XGBoost to show the child’s growth status. It also has an AI chatbot (Gemma) that provides information about stunting, nutrition, and child growth. The app is built with Python and Streamlit.                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -347,6 +388,11 @@
                         <div class="skill-level">Expert</div>
                     </li>
                     <li data-aos="fade-zoom-in" ata-aos-delay="300">
+                        <img src="./asset/python.png" alt="Node.js Icon " class="icon " height="100px " width="100px ">
+                        <p class="skill-name ">Python</p>
+                        <div class="skill-level">Beginner</div>
+                    </li>
+                    <li data-aos="fade-zoom-in" ata-aos-delay="300">
                         <img src="./asset/java.png " alt="Node.js Icon " class="icon " height="100px " width="100px ">
                         <p class="skill-name ">Java</p>
                         <div class="skill-level">Beginner</div>
@@ -374,7 +420,7 @@
                     <li data-aos="fade-zoom-in" ata-aos-delay="300">
                         <img src="./asset/postman.png " alt="Docker Icon " class="icon " height="100px " width="100px ">
                         <p class="skill-name ">Postman</p>
-                        <div class="skill-level">Beginner</div>
+                        <div class="skill-level">Expert</div>
                     </li>
                 </ul>
             </div>
@@ -385,8 +431,10 @@
     <!-- Contact -->
     <section id="contact">
         <div class="contact main-container ">
-            <div class="contact-left " data-aos="fade-right" ata-aos-delay="3000">
-                <form action="https://formspree.io/f/manwveek " method="POST" class="contact-form ">
+            <div class="contact-left" data-aos="fade-right" ata-aos-delay="3000">
+                <h2 class="contact-title">Contact Me</h2>
+
+                <form action="https://formspree.io/f/manwveek" method="POST" class="contact-form">
                     <div>
                         <input type="text " placeholder="Name " name="name " />
                     </div>
@@ -484,6 +532,38 @@
     <script>
         AOS.init();
     </script>
+
+    <script>
+    const text = "Fullstack Web Developer";
+    const typingElement = document.getElementById("typing");
+
+    let index = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+        if (!isDeleting) {
+            typingElement.textContent = text.substring(0, index + 1);
+            index++;
+
+            if (index === text.length) {
+                isDeleting = true;
+                setTimeout(typeEffect, 1500);
+                return;
+            }
+        } else {
+            typingElement.textContent = text.substring(0, index - 1);
+            index--;
+
+            if (index === 0) {
+                isDeleting = false;
+            }
+        }
+
+        setTimeout(typeEffect, isDeleting ? 70 : 120);
+    }
+
+    typeEffect();
+</script>
 </body>
 
 </html>

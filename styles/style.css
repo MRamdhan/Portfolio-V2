@@ -13,6 +13,7 @@
   --primaryIconColorHover: #5d51e8;
 
   --sectionPadding: 6rem 0;
+  --headPadding: 1rem 0;
 
   --itemBorderRadius: 0.7rem;
 }
@@ -256,9 +257,39 @@ nav ul li a:hover::after {
   justify-content: center;
 }
 
+#typing{
+    color: var(--primaryTextColor);
+}
+.typing-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 10px;
+  min-height: 2.5rem;
+  color: var(--primaryTextColor);
+
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 3px;
+  animation: blink 0.7s infinite;
+  color: var(--primaryTextColor);
+
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
 #services {
   background-color: var(--secondaryBackgroundColor);
-  padding: var(--sectionPadding);
+  padding: var(--headPadding);
 }
 
 .services .pre-title {
@@ -373,9 +404,18 @@ nav ul li a:hover::after {
 }
 
 
-#skills {
-  padding: var(--sectionPadding);
+#experienced {
+  padding: var(--headPadding);
   background: var(--secondaryBackgroundColor);
+}
+
+#skills {
+  padding: var(--headPadding);
+  background: var(--secondaryBackgroundColor);
+}
+
+#project {
+  padding: var(--headPadding);
 }
 
 .skills-grid {
@@ -541,7 +581,7 @@ nav ul li a:hover::after {
 }
 
 .contact {
-  margin-top:5%;
+  margin-top:1%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 3rem;
@@ -571,6 +611,12 @@ nav ul li a:hover::after {
 .contact-form textarea:focus {
   outline: none;
   border: 1px solid #7d7d7d;
+}
+
+.contact-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 
 .btn-submit {
