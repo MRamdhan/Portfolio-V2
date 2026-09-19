@@ -50,7 +50,7 @@
                 </div>
 
                 <div class="hero-right">
-                    <img src="./asset/actor6.gif" alt="Person Standing" />
+                    <div id="lanyard-container"></div>
                 </div>
             </section>
         </div>
@@ -526,44 +526,48 @@
     </footer>
     <!-- End Footer -->
 
-    <script src="js/main.js "></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
         AOS.init();
     </script>
 
     <script>
-    const text = "Fullstack Web Developer";
-    const typingElement = document.getElementById("typing");
+        const text = "Fullstack Web Developer";
+        const typingElement = document.getElementById("typing");
 
-    let index = 0;
-    let isDeleting = false;
+        let index = 0;
+        let isDeleting = false;
 
-    function typeEffect() {
-        if (!isDeleting) {
-            typingElement.textContent = text.substring(0, index + 1);
-            index++;
+        function typeEffect() {
+            if (!isDeleting) {
+                typingElement.textContent = text.substring(0, index + 1);
+                index++;
 
-            if (index === text.length) {
-                isDeleting = true;
-                setTimeout(typeEffect, 1500);
-                return;
+                if (index === text.length) {
+                    isDeleting = true;
+                    setTimeout(typeEffect, 1500);
+                    return;
+                }
+            } else {
+                typingElement.textContent = text.substring(0, index - 1);
+                index--;
+
+                if (index === 0) {
+                    isDeleting = false;
+                }
             }
-        } else {
-            typingElement.textContent = text.substring(0, index - 1);
-            index--;
 
-            if (index === 0) {
-                isDeleting = false;
-            }
+            setTimeout(typeEffect, isDeleting ? 70 : 120);
         }
 
-        setTimeout(typeEffect, isDeleting ? 70 : 120);
-    }
+        typeEffect();
+    </script>
 
-    typeEffect();
-</script>
+    <script type="module" src="./js/lanyard.js"></script>
+
 </body>
 
 </html>
