@@ -27,7 +27,7 @@ if (!container) {
         100
     );
 
-    camera.position.set(0, 0, 7);
+    camera.position.set(0, 0, 5);
 
 
     /* =========================================
@@ -348,13 +348,6 @@ profileImage.onload = function () {
         400,
         890
     );
-
-    ctx.fillText(
-        "Portfolio 2026",
-        400,
-        940
-    );
-
 
     /* Update texture */
 
